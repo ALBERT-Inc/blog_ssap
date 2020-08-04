@@ -16,7 +16,7 @@ def preprocess(img):
                 行列の形式は(height, width, ch)
 
         Returns:
-            img (ndarray): 入力画像.
+            ndarray: 入力画像.
                 行列の形式は(height, width, ch)
 
     """
@@ -79,11 +79,11 @@ class Mydatasets(torch.utils.data.Dataset):
                 idx (int): 学習に使用する画像のIndex.
 
             Returns:
-                out_data(Tensor): img_sizeに切り取られた画像
+                Tensor: img_sizeに切り取られた画像
                     行列の形式は(n_batch, ch, height, width)
-                out_t(Tensor): out_dataに対応した、クラスごとの正解Semantic Segmentation画像
+                Tensor: out_dataに対応した、クラスごとの正解Semantic Segmentation画像
                     行列の形式は(n_batch, class数, height, width)
-                out_t_aff(Tensor): out_dataに対応した正解Affinity
+                Tensor: out_dataに対応した正解Affinity
                     行列の形式は(n_batch, 階層数, aff_r**2, height, width)
 
         """

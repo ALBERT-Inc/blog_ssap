@@ -151,7 +151,7 @@ class Edge:
             Partitionを新しくつなげてnew_edgeを作成し、重みを更新する.
 
             Returns:
-                new_edge (Edge): 新しく作成したEdge.
+                Edge: 新しく作成したEdge.
 
         """
         partition0, partition1 = self.pair
@@ -191,8 +191,8 @@ def greedy_additive(edges, partitions):
            partitions (list): Nodeの集合(partition).
 
         Returns:
-           e (list): グラフ分割後のEdge.
-           p (list): グラフ分割後のNodeの集合(partition).
+           list: グラフ分割後のEdge.
+           list: グラフ分割後のNodeの集合(partition).
 
         Examples:
             >>> p0 = Partition([0])
@@ -246,7 +246,7 @@ def calc_js_div(p_, q_):
             q_ (ndarray): もう片方のピクセルのSegmentationのクラスごとの事後確率.
 
         Returns:
-           refine (float): Affinityにかける修正の値.
+           float: Affinityにかける修正の値.
 
     """
     p_q_ = (p_+q_)/2+1e-5
@@ -279,9 +279,9 @@ def make_ins_seg(outputs, b=0, st_for=0, en_for=5, min_size=5):
                 これより小さいInstanceは削除される.
 
         Returns:
-           ins (ndarray): Instance segmentation画像.
+           ndarray: Instance segmentation画像.
                行列の形式は(cls数, height, width, 3(RGB))
-           ins_list (list): instanceごとのpixelの位置データのlist.BBox作成に用いる.
+           list: instanceごとのpixelの位置データのlist.BBox作成に用いる.
 
     """
 

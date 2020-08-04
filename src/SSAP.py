@@ -75,7 +75,7 @@ class Up(nn.Module):
                 行列の形式は(n_batch, out_ch, height, width).
 
          Returns:
-            x(Tensor): 解像度が低い特徴量と保存しておいた特徴量を組み合わせた特徴量.
+            Tensor: 解像度が低い特徴量と保存しておいた特徴量を組み合わせた特徴量.
                 行列の形式は(n_batch, out_ch, height, width).
 
         """

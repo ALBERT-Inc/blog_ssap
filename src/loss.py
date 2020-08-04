@@ -45,6 +45,9 @@ def l2_loss(input_, t_seg, target, weight):
             weight (list): Loss計算時の重み.
                 [Object内の重み, Affinityが1の時のdropout率]を格納.
 
+        Returns:
+            float: AffinityのLossを返す.
+
     """
     # Affinityが1のものを支持された率でdropout.
     # targetとinput_の値を同じにしてlossを0にする.
@@ -83,8 +86,8 @@ def calc_loss(outputs, labels, t_aff,
             l_aff_weight (list): Affinityの解像度毎のlossの重み.
 
         Returns:
-            loss_seg (float): Semantic SegmentationのLoss.
-            loss_aff (float): AffinityのLoss.
+            float: Semantic SegmentationのLoss.
+            float: AffinityのLoss.
 
     """
     # Semantic Segmentationはout_c0~out_c4,

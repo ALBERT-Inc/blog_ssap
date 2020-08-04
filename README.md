@@ -36,7 +36,9 @@
 
 ## 実行方法
 - `requirements.txt` に書かれているライブラリをインストールしてください．
-- ノートブックを上から実行していくことで、学習/評価が行えます.
+- [MSCOCOのホームページ](https://cocodataset.org/#download)から学習/評価画像とそのアノテーションデータをダウンロードし、`data/`以下に格納してください(ブログでは2014年のデータを使用しました)。
+- `make_coco_dataset.ipynb`を上から実行することで、アノテーションデータからSegmentation maskを作成し、データのresizeとcropを行います。3つ目のセルでtrain/valが変更できるので、これを変更し、学習データと評価データを作成します。
+- `SSAP.ipynb`を上から実行していくことで、学習/評価が行えます.
 
 ## 元論文
 SSAP: Single-Shot Instance Segmentation With Affinity Pyramid
