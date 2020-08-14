@@ -1,5 +1,5 @@
 # SSAP再現実装公開用リポジトリ
-[SSAP [Proposal-freeなInstance Segmentation手法] の紹介と実験](https://blog.albert2005.co.jp/2020/08/14/ssap/)で使用したプログラムです.
+[SSAP [Proposal-freeなInstance Segmentation手法] の紹介と実験](https://blog.albert2005.co.jp/2020/08/17/ssap/)で使用したプログラムです.
 
 ## ファイル構成について
 ```
