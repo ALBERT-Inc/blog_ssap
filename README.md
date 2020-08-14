@@ -1,5 +1,5 @@
 # SSAP再現実装公開用リポジトリ
-[SSAP [Proposal-freeなInstance Segmentation手法] の紹介と実験](https://blog.albert2005.co.jp)で使用したプログラムです.
+[SSAP [Proposal-freeなInstance Segmentation手法] の紹介と実験](https://blog.albert2005.co.jp/2020/08/14/ssap/)で使用したプログラムです.
 
 ## ファイル構成について
 ```
@@ -36,8 +36,8 @@
 
 ## 実行方法
 - `requirements.txt` に書かれているライブラリをインストールしてください．
-- [MSCOCOのホームページ](https://cocodataset.org/#download)から学習/評価画像とそのアノテーションデータをダウンロードし、`data/`以下に格納してください(ブログでは2014年のデータを使用しました)。
-- `make_coco_dataset.ipynb`を上から実行することで、アノテーションデータからSegmentation maskを作成し、データのresizeとcropを行います。3つ目のセルでtrain/valが変更できるので、これを変更し、学習データと評価データを作成します。
+- [MSCOCOのホームページ](https://cocodataset.org/#download)から学習/評価画像とそのアノテーションデータをダウンロードし，`data/`以下に格納してください(ブログでは2014年のデータを使用しました)．
+- `make_coco_dataset.ipynb`を上から実行することで，アノテーションデータからSegmentation maskを作成し，データのresizeとcropを行います．3つ目のセルでtrain/valが変更できるので，これを変更し学習データと評価データを作成します．
 - `SSAP.ipynb`を上から実行していくことで、学習/評価が行えます.
 
 ## 元論文
